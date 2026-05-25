@@ -42,6 +42,8 @@ This runs the six tests in `tests/test_search.py`, covering matching queries, em
 
 A GitHub Actions workflow (`.github/workflows/tests.yml`) runs the same command on every push.
 
+You can see a passing CI run here: <https://github.com/jeetkatariya/faq-search/actions/runs/26387582940/job/77669499160>
+
 ## Search approach
 
 The search pipeline is intentionally simple and explainable:
@@ -75,13 +77,11 @@ A threshold of `0.3` keeps that middle group while still cleanly excluding the i
 
 ## Sample queries
 
-Try these in the UI to see the search behave end-to-end:
+Try these natural-language questions in the UI. Each one surfaces the top 3 most relevant FAQs (the cap defined in our scope) and exercises a different ranking behavior:
 
-- `Why are images not loading in my browser?` — full natural-language question; returns 2 Technical FAQs (matches the screenshot above).
-- `cancel subscription` — returns 3 results spanning both **Billing** and **Account** categories, demonstrating cross-category ranking.
-- `invoice` — single-keyword query returning 1 Billing FAQ.
-- `weather today` — returns *"No results found"* (correctly rejected as irrelevant, proving the relevance threshold filters out low-score matches).
-- `refund` with category filter set to **Billing** — restricts the search to Billing FAQs only; switching the filter to **Technical** returns no results, demonstrating the category filter behavior.
+- `How do I cancel my subscription?` — direct question; returns 3 results spanning **Billing** and **Account** (cancel subscription, delete account, charged twice), demonstrating cross-category ranking.
+- `How do I get a refund for my unused subscription?` — multi-intent question (refund + subscription); returns 3 results across **Billing** and **Account**, showing how the ranker reconciles overlapping intents.
+- `Help me with my browser problem` — broader, vaguely worded query; returns 3 Technical FAQs (images not loading, supported browsers, slow loading), demonstrating recall over a single category.
 
 ## Project structure
 
