@@ -1,6 +1,6 @@
 # FAQ Search
 
-![tests](https://github.com/jeetkatariya/faq-search/actions/workflows/tests.yml/badge.svg)
+
 
 A small Flask web app that lets a user type a question and returns up to 3 matching FAQ entries, ranked by relevance using TF-IDF and cosine similarity over a local dataset (`faq.json`).
 
