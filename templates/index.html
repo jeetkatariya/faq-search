@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Search</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>FAQ Search</h1>
+      <p class="tagline">Ask a question and find the most relevant answers from our FAQs.</p>
+    </header>
+
+    <form id="search-form" novalidate>
+      <input
+        type="text"
+        id="query"
+        name="query"
+        placeholder="e.g., How do I reset my password?"
+        autocomplete="off"
+        aria-label="Search query"
+      />
+      <select id="category" name="category" aria-label="Filter by category">
+        <option value="">All categories</option>
+        <option value="Billing">Billing</option>
+        <option value="Technical">Technical</option>
+        <option value="Account">Account</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="message" role="status" aria-live="polite"></div>
+    <ul id="results" aria-label="Search results"></ul>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

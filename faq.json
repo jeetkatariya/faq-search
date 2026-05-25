@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "Why was I charged twice for the same subscription?",
+    "answer": "Duplicate subscription charges usually appear when a payment is retried after a temporary authorization hold. The pending subscription charge typically drops off within 3-5 business days. If both subscription charges have posted after a week, contact billing support with your transaction IDs and we will issue a refund for the duplicate subscription charge.",
+    "category": "Billing"
+  },
+  {
+    "id": 2,
+    "question": "How do I update my payment method?",
+    "answer": "Go to Settings > Billing > Payment Methods. Click Add Payment Method to add a new card or bank account, then set it as the default payment method. The old payment method will remain on file until you remove it. Changes take effect on your next billing cycle.",
+    "category": "Billing"
+  },
+  {
+    "id": 3,
+    "question": "Can I get a refund for an unused subscription?",
+    "answer": "Refunds for unused time on annual subscriptions are available within 30 days of renewal. Monthly subscriptions are non-refundable but the subscription can be cancelled at any time to stop future subscription charges. Submit refund requests through Settings > Billing > Request Refund.",
+    "category": "Billing"
+  },
+  {
+    "id": 4,
+    "question": "How do I download an invoice or receipt?",
+    "answer": "Invoices are available under Settings > Billing > Invoice History. Click any invoice to view it, then use the Download PDF button. Receipts for individual transactions are emailed automatically and can also be downloaded from the same Invoice History page.",
+    "category": "Billing"
+  },
+  {
+    "id": 5,
+    "question": "How do I cancel my subscription?",
+    "answer": "Go to Settings > Billing > Subscription and click Cancel Subscription. Your subscription stays active until the end of the current billing period, after which the subscription will not renew. You can resubscribe at any time. Cancelling your subscription does not automatically issue a refund for the current billing period.",
+    "category": "Billing"
+  },
+  {
+    "id": 6,
+    "question": "The app is loading very slowly. What can I do?",
+    "answer": "Slow loading is often caused by a stale browser cache, slow network, or browser extensions. Try clearing your browser cache, disabling browser extensions, and testing on a different network. If the issue persists, check our status page for any ongoing incidents.",
+    "category": "Technical"
+  },
+  {
+    "id": 7,
+    "question": "How do I clear my browser cache and cookies?",
+    "answer": "In Chrome and Edge, press Ctrl+Shift+Delete (Cmd+Shift+Delete on Mac), select Cached images and files plus Cookies, and click Clear. In Firefox and Safari, the same browser shortcut opens the equivalent dialog. After clearing the browser cache, refresh the page.",
+    "category": "Technical"
+  },
+  {
+    "id": 8,
+    "question": "Why am I getting a 404 Not Found error?",
+    "answer": "A 404 error means the page or resource you requested does not exist. Common causes are mistyped URLs, deleted content, or expired share links. Try navigating from the home page. If you reached the URL from inside the app, please report the broken link.",
+    "category": "Technical"
+  },
+  {
+    "id": 9,
+    "question": "Which browsers are supported?",
+    "answer": "We officially support the latest two versions of the Chrome browser, Firefox browser, Safari browser, and Edge browser on desktop, and Chrome and Safari on mobile. Internet Explorer is not a supported browser. Some features require WebGL and modern JavaScript APIs.",
+    "category": "Technical"
+  },
+  {
+    "id": 10,
+    "question": "Why are images not loading in my browser?",
+    "answer": "Images may fail to load if your browser is blocking third-party content, if the browser cache is corrupted, or if a browser ad blocker is interfering. Try disabling browser extensions, clearing your browser cache, and refreshing the page. If the images do not load in multiple browsers, the issue may be on our side.",
+    "category": "Technical"
+  },
+  {
+    "id": 11,
+    "question": "How do I reset my password?",
+    "answer": "Click Forgot Password on the sign-in page and enter your account email. We will send a password reset link valid for 30 minutes. Open the link and choose a new password of at least 12 characters. If you do not receive the password reset email, check spam and verify the email on file for your account.",
+    "category": "Account"
+  },
+  {
+    "id": 12,
+    "question": "How do I enable two-factor authentication?",
+    "answer": "Go to Settings > Security > Two-Factor Authentication and click Enable. Scan the QR code with an authenticator app such as Authy or Google Authenticator, then enter the 6-digit code to confirm. Save the recovery codes shown in a safe place.",
+    "category": "Account"
+  },
+  {
+    "id": 13,
+    "question": "How do I change my email address on file?",
+    "answer": "Go to Settings > Profile > Email and enter the new email address. We will send a confirmation link to the new email which is valid for 24 hours. Your old email continues to work until the new email is confirmed. Account notifications switch to the new email address immediately after confirmation.",
+    "category": "Account"
+  },
+  {
+    "id": 14,
+    "question": "How do I delete my account permanently?",
+    "answer": "Go to Settings > Account > Delete Account. You will be asked to confirm with your password and a one-time email code. Deletion is irreversible. Any active subscription is cancelled when you delete your account, ending the subscription immediately with no refund for unused subscription time. If you only want to stop subscription charges without deleting the account, cancel the subscription from Billing instead.",
+    "category": "Account"
+  },
+  {
+    "id": 15,
+    "question": "I can't sign in to my account. What should I do?",
+    "answer": "If you cannot sign in to your account, first verify your account email and password are correct. Try a different browser or clear your browser cache, since some sign-in failures are caused by stale browser sessions or browser extensions. If you forgot your password, use the password reset link on the sign-in page. If two-factor authentication is enabled but you lost your authenticator, contact account support with your account email to recover sign-in access.",
+    "category": "Account"
+  }
+]
